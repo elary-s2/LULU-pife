@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pife Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Pife Online</h1>
+
+  <div id="joinArea" class="join-area">
+    <p>Entre com seu nome para entrar na sala de até 6 jogadores.</p>
+    <input id="playerName" type="text" placeholder="Seu nome" maxlength="16" />
+    <button id="joinBtn" class="botao-acao">Entrar na sala</button>
+    <div id="joinMessage" class="status"></div>
+    <div id="connectionStatus" class="status"></div>
+  </div>
+
+  <div id="gameArea" class="jogo hidden">
+    <div id="playersArea" class="players-grid"></div>
+
+    <section id="topo">
+      <div class="pilha">
+        <div class="titulo-pilha">Baralho</div>
+        <div id="baralho" class="pilha-cartas"></div>
+        <button id="comprarBaralho" class="botao-acao">Comprar do baralho</button>
+      </div>
+
+      <div class="pilha">
+        <div class="titulo-pilha">Descarte</div>
+        <div id="descarte" class="pilha-cartas"></div>
+        <button id="comprarDescarte" class="botao-acao">Comprar do descarte</button>
+      </div>
+    </section>
+
+    <section id="infos">
+      <div id="status" class="status"></div>
+      <button id="resetBtn" class="botao-acao hidden">Reiniciar sala</button>
+      <div class="info-placar">
+        <span id="jogadorInfo">Sua mão: 0 cartas</span>
+      </div>
+    </section>
+
+    <section id="mesa">
+      <h2>Sua mão</h2>
+      <div id="maoJogador" class="mao"></div>
+    </section>
+
+    <section id="melds">
+      <div>
+        <h2>Seus conjuntos</h2>
+        <div id="meldsJogador" class="conjuntos"></div>
+        <div class="meld-actions">
+          <button id="autoDeclararBtn" class="botao-acao">Auto declarar</button>
+          <button id="declararMeldBtn" class="botao-acao">Declarar conjunto</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="botoes-finais">
+      <button id="startGameBtn" class="botao-acao hidden">Iniciar jogo</button>
+      <button id="baterBtn" class="botao-acao">Bater</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
