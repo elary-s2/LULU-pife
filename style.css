@@ -89,7 +89,7 @@ h1 {
 }
 
 .selecionada-meld {
-  outline: 3px solid #2b8a3e;
+  outline: 3px solid #1d5190;
   transform: translateY(-6px);
 }
 
@@ -112,7 +112,7 @@ h1 {
   border: none;
   border-radius: 50%;
   background: rgba(255,255,255,0.9);
-  color: #2b8a3e;
+  color: #3373b4;
   font-weight: bold;
   cursor: pointer;
   line-height: 18px;
@@ -124,7 +124,7 @@ h1 {
 }
 
 .conjunto-highlight {
-  box-shadow: 0 0 0 4px rgba(43,138,62,0.25);
+  box-shadow: 0 0 0 4px rgba(21, 47, 95, 0.25);
   transform: translateY(-8px);
 }
 
@@ -213,7 +213,7 @@ h1 {
   border-radius: 10px;
   padding: 12px 16px;
   background: #ffd700;
-  color: #0f5c2e;
+  color: #0f375c;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.2s, transform 0.2s;
@@ -254,7 +254,7 @@ h1 {
 
 .conjunto-header {
   font-weight: bold;
-  color: #0f5c2e;
+  color: #0f375c;
 }
 
 .small-hand {
